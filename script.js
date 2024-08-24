@@ -1,10 +1,12 @@
 const imgSlider = document.querySelector(".img-slider");
 const items = document.querySelectorAll(".item");
 const imgItems = document.querySelectorAll(".img-item");
+const infoItems = document.querySelectorAll(".info-item");
 
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
 
+let colors = ["", "", "", "", "", ""];
 let indexSlider = 0;
 let index = 0;
 
@@ -16,6 +18,9 @@ const slider = () => {
   });
   document.querySelector(".img-item.active").classList.remove("active");
   imgItems[index].classList.add("active");
+  
+  document.querySelector(".info-item.active").classList.remove("active");
+  infoItems[index].classList.add("active");
 }
 
 nextBtn.addEventListener("click", () => {
