@@ -16,6 +16,7 @@ body {
   background: #3674be;
   min-height: 100vh;
   transition: var(--all-transition);
+  overflow: hidden;
 }
 
 body::before {
@@ -40,7 +41,6 @@ body::before {
   height: 100%; */
   width: 1300px;
   height: 1300px;
-  border: 2px solid red;
   border-radius: 50%;
 }
 
